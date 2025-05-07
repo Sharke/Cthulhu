@@ -12,8 +12,6 @@ public class main {
 	static client conn;
 
 	public static void main(String[] args) throws IOException {
-		com.cool.security.tests.Slowloris slow = new com.cool.security.tests.Slowloris("tabkingusa.com", 80, 500);
-		slow.Start();
 		conn = new client(_HOSTIP,_HOSTPORT);
 		conn.KeepAlive.Enable();
 		if (conn.Connect())
